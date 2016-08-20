@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Eaze Wordpress and Email Front End Project
 
 > Our Wordpress and Email code challenge for engineering applicants
@@ -41,6 +40,3 @@ There are three directories in this repo:
 1. `theme/` - the wordpress theme you’ll be adding to
 3. `email/announcement.html` - put your email html here
 4. `email/images/` - any images you’ll need for this email
-=======
-# wordpress-and-email-front-end-project
->>>>>>> 98150fcaad377b93e0eb7c3f546481fca4cd61a7
