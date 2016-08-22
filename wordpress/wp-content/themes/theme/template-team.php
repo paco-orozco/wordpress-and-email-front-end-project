@@ -15,11 +15,11 @@ $team_posts = get_posts( array(
 
 if ( $team_posts ):
 ?>
-<section class="row profiles">
-  <div class="intro">
+<section>
+  <div>
     <h2><?php the_title(); ?></h2>
 
-    <p class="lead"><?php the_content(); ?></p>
+    <p><?php the_content(); ?></p>
   </div>
 
   <?php
