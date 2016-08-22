@@ -148,15 +148,6 @@ function team_post_type() {
 add_action( 'init', 'team_post_type', 0 );
 
 /**
- * Load CSS for template-team.php
- */
-function team_styles() {
-	if ( is_page_template('template-team.php') )
-   	wp_enqueue_style( 'team-template', get_stylesheet_directory_uri() . '/assets/css/team.css' );
-}
-add_action( 'wp_enqueue_scripts', 'team_styles', 101 );
-
-/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
