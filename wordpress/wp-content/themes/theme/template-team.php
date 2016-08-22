@@ -13,7 +13,6 @@ $team_posts = get_posts( array(
 ) );
 
 
-
 if ( $team_posts ):
 ?>
 <section class="row profiles">
@@ -42,7 +41,8 @@ if ( $team_posts ):
     </div>
 
     <div>
-      <img src="<?php the_field('team_phone'); ?>" alt="<?php the_title(); ?>, <?php the_field('team_position'); ?>">
+
+     <img src="<?php the_field('team_photo'); ?>" />
     </div>
 
     <div>
@@ -51,21 +51,8 @@ if ( $team_posts ):
       <p><?php the_field('team_description'); ?></p>
     </div>
 
-    <!-- <div>
-      <a href="tel:<?php the_field('team_phone'); ?>"></a>
 
-      <a href="mailto:<?php echo antispambot( get_field('team_email') ); ?>"></a>
-
-      <?php if ( $twitter = get_field('team_twitter') ): ?>
-      <a href="<?php echo $twitter; ?>"></a>
-      <?php endif; ?>
-
-      <?php if ( $linkedin = get_field('team_linkedin') ): ?>
-      <a href="<?php echo $linkedin; ?>"></a>
-      <?php endif; ?>
-
-    </div>
-  </article> -->
+  </article>
   <!-- /.profile -->
   <?php endforeach; ?>
 </section><!-- /.row -->
